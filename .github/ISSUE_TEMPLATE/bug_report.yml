@@ -20,7 +20,11 @@ body:
     attributes:
       label: Reproduction Steps
       description: Steps to reproduce the behavior.
-      placeholder: 1. Go to '...' 2. Click on '....' 3. Scroll down to '....' 4. See error
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
     validations:
       required: true
   - type: input
@@ -28,28 +32,16 @@ body:
     attributes:
       label: Version
       description: Specify the version of our software you are running.
-      placeholder: e.g. 1.0.2
-    validations:
-      required: true
+      placeholder: e.g. v1.0.2
   - type: input
     id: platform
     attributes:
       label: Browser/Platform
       description: Specify the browser or platform where you encountered the issue.
       placeholder: e.g. Firefox, Chrome, Windows, macOS
-    validations:
-      required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
